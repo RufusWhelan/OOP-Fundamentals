@@ -1,12 +1,12 @@
 class Subject:
     def __init__ (self,name,year,code,students):
-        self.name = name
-        self.year = year
-        self.code = code
-        self.students = students
+        self._name = name
+        self._year = year
+        self._code = code
+        self._students = students
     
     def __str__(self):
-        return f"{self.name}, Year : {self.year}, Code: {self.code}, Students: {self.students}"
+        return f"{self._name}, Year : {self._year}, Code: {self._code}, Students: {self._students}"
 
 class SubjectList:
     def __init__(self):

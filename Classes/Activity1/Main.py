@@ -1,4 +1,4 @@
-from GameObjects import Player, Weapon, Enemy # MUST have this in the program
+from game_objects import Player, Weapon, Enemy # MUST have this in the program
 import random #For random damage and health
 # Create an instance of Player
 playerCharacter = Player('Gimli', 'Dwarf', 'Fighter', 3, 180)
