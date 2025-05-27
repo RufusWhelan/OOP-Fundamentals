@@ -23,3 +23,13 @@ class BankAccount:
     
     def set_ownerName(self, name):
         self._ownerName = name
+    
+    def deposit(self, amount):
+        self._balance = self._balance + amount
+    
+    def withdraw(self, amount):
+        if amount <= self._balance:
+            self._balance = self._balance - amount
+        
+        else:
+            return("You don't have that much money!")
